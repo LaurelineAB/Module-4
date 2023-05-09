@@ -1,0 +1,64 @@
+/***ROTATE***/
+.rotate {
+    display:block;
+    margin:0 auto;
+    transform:rotate(90deg);
+}
+.rotate:hover {
+    animation:Rotate 3s;
+}
+@keyframes Rotate {
+    from {
+        transform:rotate(90deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+
+/***SCALE***/
+div {
+    width:250px;
+    height:250px;
+    margin:0 auto;
+    border-radius:50%;
+    border:5px solid #dd5735;
+    padding:1em;
+    position:relative;
+}
+div p {
+    text-align:center;
+    /*font-size:1.5em;*/
+    color:#dd5735;
+    /*position:relative;
+    bottom:3em;*/
+}
+.scale:hover {
+    transition:all .5s;
+    transform:scale(0.5);
+    /*animation:Scale .5s;*/
+}
+/*@keyframes Scale {
+    from {
+        transform:scale(1);
+    }
+    to {
+        transform:scale(0.5);
+    }
+}*/
+
+
+/*-CORRECTION-*/
+div p {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0;
+    transition:all .5s;
+}
+.scale:hover ~ p {
+    opacity:1;
+    transform:scale(2) translateY(-.7em);
+}

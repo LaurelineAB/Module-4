@@ -1,0 +1,77 @@
+/***TRANSFORM***/
+div {
+    width:200px;
+    background-color: #F8CC34;
+    margin:0 auto;
+    padding:1em;
+}
+
+/*div[class*="transform"]{
+    
+}*/
+.transform-translate {
+    transform:translate(100%);
+}
+.transform-scale {
+    transform:scale(0.5);
+}
+.transform-rotate {
+    transform-origin:center;
+    transform:rotate(45deg);
+}
+.transform-skew {
+    transform:skew(30deg);
+}
+.transform-multi {
+    transform-origin:top-left;
+    transform:translate(10em) scale(0.5) rotate(45deg)/*matrix(0.5,1,-1,0.5,100,50)*/;
+}
+
+/***TRANSITION***/
+.transition {
+    transition-duration:2s;
+    transition-property:transform, background-color
+}
+.transition:hover {
+    transform:scale(2);
+    background-color: #4BCCFF;
+}
+
+/*-CORRECTION-
+.transition {
+    transition:all 1s;
+}
+.transition:hover {
+    background-color:#4BCCFF;
+    transform:scale(2);
+    cursor:pointer;
+}*/
+
+/***ANIMATION***/
+.animation {
+    /*width:200px;
+    font-size:2rem;
+    padding:1em;
+    margin:0 auto;*/
+    background-color: #99CC33;
+    /*animation:ZoomRotate 2s;
+    /*animation-play-state:paused;*/
+}
+
+button {
+    margin:0;
+}
+button:active ~ .animation {
+    animation:ZoomRotate 2s;
+    /*animation-play-state:running;*/
+}
+@keyframes ZoomRotate {
+    from {
+        transform:scale(1) rotate(0deg) ;
+        /*transform:rotate(0deg);*/
+    }
+    to {
+        transform:scale(1.5) rotate(45deg);
+        /*transform:rotate(45deg);*/
+    }
+}

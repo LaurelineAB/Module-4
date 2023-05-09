@@ -1,0 +1,21 @@
+nav {
+    margin:5em auto;
+    width:100%;
+}
+ul{
+    display:flex;
+}
+li{
+    list-style:none;
+    padding:1em;
+    width:100%;
+    color:#fff;
+    background-color: #dd5735;
+    text-align:center;
+}
+li:hover {
+    transition:color 0.2s,background-color 1s,transform 0.5s;
+    color:#333;
+    background-color: #fc3;
+    transform:scale(1.5);
+}
