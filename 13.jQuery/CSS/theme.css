@@ -1,0 +1,18 @@
+.buttons {
+    border:1px solid #999;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+}
+button {
+    margin:2em 0.5em;
+}
+article {
+    border-radius:5px;
+}
+.hello {
+    display:none;
+}
+.blue {
+    color:blue;
+}

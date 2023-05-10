@@ -1,0 +1,37 @@
+.position-fixed {
+    position:fixed;
+    background-color: #69c;
+    top:0;
+    right:0;
+    width:20%;
+    z-index:4;
+    margin:0;
+}
+.position-sticky {
+    position:sticky;
+    background-color: #f9c;
+    top:0;
+    z-index:3;
+}
+
+.position-static {
+    position:static;
+    background-color: #9c6;
+}
+.position-relative {
+    position:relative;
+    background-color: #fc3;
+    right:5em;
+}
+.relative {
+    position:relative;
+    z-index:1;
+}
+.position-absolute {
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #f93;
+    padding:2em;
+    z-index:2;
+}

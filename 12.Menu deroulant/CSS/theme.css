@@ -1,0 +1,51 @@
+header {
+    padding:1em 0 0 0;
+}
+header nav {
+    background-color: #333;
+    color:white;
+}
+header ul {
+    padding:0;
+    text-align:center;
+}
+header li {
+    color:white;
+    list-style:none;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header a {
+    text-decoration:none;
+    color:white;
+    padding:1em;
+    display:inline-block;
+    width:8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header a:hover {
+    background-color: #dd5735;
+}
+.menu {
+    display:flex;
+    justify-content:center;
+}
+.sous-menu {
+    display:none;
+    position:absolute;
+    background-color: #333;
+    
+}
+.sous-menu li + li {
+    border-top:1px solid #444;
+}
+.menu a:hover ~ .sous-menu {
+    display:block;
+}
+.sous-menu:hover {
+    display:block;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu déroulant</title>
+        <link rel="stylesheet" href="CSS/common-v3.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/theme.css">
+    </head>
+    <body>
+        <header>
+            <h1>Menu déroulant</h1>
+            <p>Faire un menu déroulant avec le positionnement absolu</p>
+            <!--nav>ul>(li>(a{Rubrique $}+(ul>(li>a{Rubrique 1.$})*4)))*3-->
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Rubrique 1</a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Rubrique 1.1</a></li>
+                            <li><a href="#">Rubrique 1.2</a></li>
+                            <li><a href="#">Rubrique 1.3</a></li>
+                            <li><a href="#">Rubrique 1.4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Rubrique 2</a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Rubrique 2.1</a></li>
+                            <li><a href="#">Rubrique 2.2</a></li>
+                            <li><a href="#">Rubrique 2.3</a></li>
+                            <li><a href="#">Rubrique 2.4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Rubrique 3</a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Rubrique 3.1</a></li>
+                            <li><a href="#">Rubrique 3.2</a></li>
+                            <li><a href="#">Rubrique 3.3</a></li>
+                            <li><a href="#">Rubrique 3.4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="gutter">
+            <!--(article>(h2>Lorem3)+(p>lorem30)*2)*2-->
+            <article>
+                <h2>Lorem ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, recusandae, ea, laboriosam totam similique ut optio reiciendis omnis quos eos nobis enim aperiam accusamus nam eveniet? Laborum ex expedita aliquam.</p>
+                <p>Quod, debitis assumenda natus harum rem ducimus modi tempora laudantium corrupti necessitatibus voluptas veritatis maiores minima maxime deserunt autem quidem quas illo dolore fugit laborum hic tenetur labore aliquam eligendi.</p>
+            </article>
+            <article>
+                <h2>Iste, obcaecati, magnam?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, pariatur corporis sequi at aperiam exercitationem voluptatum ab vitae. Eum, ullam omnis hic autem iure aspernatur illum eaque illo rem soluta.</p>
+                <p>Dicta dignissimos reprehenderit earum consectetur officiis aliquam deserunt quis animi voluptate ullam? Voluptatum, mollitia repellat porro sit vitae dolore sed delectus rerum. Accusamus, nam, hic accusantium a cupiditate soluta quidem.</p>
+            </article>
+
+        </main>
+        <footer>
+            <p><a href="www.3wa.fr"><img src="3wa-logo.png" alt="Propriété de la 3W Academy"></a></p>
+            <p>Ce matériel pédagogique est la propriété de la <a href="www.3wa.fr">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,27 @@
+header {
+    /*padding:1em 0 0 0;*/
+}
+nav {
+    position:sticky;
+    top:1rem;
+}
+nav ul {
+    display:flex;
+    background-color: #dd5735;
+    padding:0;
+    justify-content:space-around;
+}
+nav ul li {
+    list-style:none;
+    padding:1em;
+    color:white;
+}
+nav li a {
+    color:white;
+}
+footer {
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+}

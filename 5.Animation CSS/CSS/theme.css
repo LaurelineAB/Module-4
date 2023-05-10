@@ -83,3 +83,6 @@ div[class*="circle"] {
         transform:rotate(360deg);
     }
 }
+
+/*Ou : div.loader tourne, pas les cercles.
+Centrer les cercles avec position:relative pour la div et absolute pour les cercles

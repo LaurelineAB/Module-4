@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Médias HTML</title>
+        <link rel="stylesheet" href="CSS/common-v3.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/theme.css">
+    </head>
+    <body>
+        <header>
+            <h1>Intégrer des médias en HTML</h1>
+            <p>Utilisation de services tiers et des éléments AUFIO, VIDEO pour intégrer des sons et des vidéos</p>
+        </header>
+        <main class="gutter">
+            <article>
+                <h2>La dernière conférence de Lea Veron (sur Vimeo)</h2>
+                <!--<figure>-->
+                    <iframe src="https://player.vimeo.com/video/364399309?h=c31c26d632" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <p><a href="https://vimeo.com/364399309">Lea Verou - The Web Design Cheat Code: Using SVG to Bridge CSS&rsquo; Gaps</a> from <a href="https://vimeo.com/fronteers">Fronteers</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                    <!--<figcaption></figcaption>-->
+                <!--</figure>-->
+            </article>
+            <article>
+                <h2>La balise video</h2>
+                <video controls width="80%" poster="ressources/bunny.jpg">
+                    <source src="ressources/bunny.ogv" type="video/ogv">
+                    <source src="ressources/bunny.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge les vidéos HTML.
+                </video>
+            </article>
+            <article>
+                <h2>La balise audio</h2>
+                <audio controls loop>
+                    <source src="ressources/space.ogg" type="audio/ogg">
+                    <source src="ressources/space.mp3" type="audio/mp3">
+                    <source src="ressources/space.wav" type="audio/wav">
+                    Votre navigateur ne prend pas en charge les contenus audio HTML.
+                </audio>
+            </article>
+        </main>
+        <footer>
+            <p><a href="www.3wa.fr"><img src="3wa-logo.png" alt="Propriété de la 3W Academy"></a></p>
+            <p>Ce matériel pédagogique est la propriété de la <a href="www.3wa.fr">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    </body>
+</html>
+<!--(article>h2{La dernière conférence de Lea Veron (sur Vimeo)}+figure>figcaption)+(article>h2{La balise video}+video)+(article>h2{La balise audio}+audio)-->

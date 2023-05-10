@@ -1,0 +1,149 @@
+/***GENERAL***/
+html {
+    font-size:62.5%;
+}
+body {
+    font-size:1.8rem;
+    font-family:Athiti;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+main {
+    padding:1em;
+}
+
+
+/***TITRES***/
+h2, h3, h4 {
+    font-family:Merienda;
+    text-align:center;
+}
+main h2 {
+    font-size:3rem;
+}
+main h3 {
+    font-size:2.5rem;
+}
+main h4 {
+    font-size:2rem;
+    margin-top:0.5em;
+}
+main h2::before, main h2::after, 
+main h3::before, main h3::after,
+main h4::before, main h4::after {
+    content:"★";
+    color:#950000;
+    font-size:1.5rem;
+    line-height:1.5rem;
+    vertical-align:middle;
+    display:inline-block;
+    padding:0 0.5em;
+}
+
+/***HEADER***/
+header {
+    background: linear-gradient(#ebe3db 20%,#fff 40%);
+    text-align:center;
+} 
+header img {
+    width:20%;
+    margin-top:2em;
+}
+h1 {
+    text-transform:uppercase;
+    font-size:3rem;
+}
+h1::before, h1::after {
+    content:"★";
+    color:#950000;
+    font-size:1.5rem;
+    vertical-align:middle;
+    display:inline-block;
+    padding:0 0.5em;
+}
+header ul {
+    padding:0;
+}
+header li {
+    list-style:none;
+    /*padding:0.5em;*/
+    background-color: #ebe3db;
+    border-bottom:1px solid #4c4343;
+}
+header li:first-child {
+    border-top:1px solid #4c4343;
+    background-color: #4c4343;
+    color:white;
+}
+header li a {
+    text-decoration:none;
+    color:inherit;
+    font-weight:bold;
+    padding:0.5em;
+    display:block;
+    width:100%;
+    transition:all .3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*header li a:first-of-type {
+    background-color: #4c4343;
+    color:white;
+}*/
+header li a:hover {
+    background-color: #950000;
+    color:white;
+}
+
+
+/***WELCOME***/
+.welcome {
+    text-align:justify;
+}
+.welcome img {
+    width:100%;
+}
+
+
+/***MENUS***/
+.menus article {
+    background-color: #ebe3db;
+    padding:1em 0;
+    margin:1em 0;
+}
+.menus article img {
+    width:100%;
+}
+.menus article p {
+    font-size:1.5rem;
+    padding:1em;
+    margin:0;
+    border-bottom:1px dashed #4c4343;
+}
+.menus article p:before {
+    content:"★";
+    color:#950000;
+    font-size:1.5rem;
+    vertical-align:middle;
+    display:inline-block;
+    padding:0 0.5em;
+}
+.menus .more {
+    border:none;
+    background-color: #4c4343;
+    color:white;
+    width:90%;
+    padding:1em;
+    display:block;
+    margin:1em auto;
+}
+
+
+/***FOOTER***/
+footer {
+    background-image: url(../ressources/images/footer-bg.jpg);
+    color:white;
+    text-align:center;
+}
