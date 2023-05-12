@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fenêtre modale</title>
+        <link rel="stylesheet" href="CSS/common-v3.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/theme.css">
+        <link rel="icon" href="favicon-32x32.png"/>
+    </head>
+    <body>
+        <header>
+            <h1>Fenêtre modale</h1>
+            <p>Faire une fenêtre modale, utilisation des propriétés position, animation et de Javascript</p>
+        </header>
+        <main>
+            <!--article>h2{Cliquer sur le bouton pour ouvrir une fenêtre modale}+button{Afficher}+p*5>lorem50-->
+            <article>
+                <h2>Cliquer sur le bouton pour ouvrir une fenêtre modale</h2>
+                <button id="open">Afficher</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, laboriosam, similique, at quis repudiandae culpa saepe quas omnis voluptatem dolor accusamus alias tempore minima minus harum molestiae error sapiente rerum corrupti aliquam expedita nihil pariatur nisi sunt aut earum voluptates deserunt quia fuga ex laborum ducimus iure qui in cumque.</p>
+                <p>Nam, aliquid, animi omnis molestias officiis voluptatem facere debitis beatae reiciendis labore alias vero accusamus soluta eaque doloribus rem vel perferendis magnam aut eum! Id, magnam, inventore est suscipit velit aliquid veritatis maiores tempore facilis ex incidunt unde voluptates temporibus quod expedita corporis possimus sit aperiam nihil corrupti vel quo.</p>
+                <p>Tenetur, qui, possimus quo corrupti perspiciatis ab eum quae aut error quisquam magni accusamus reiciendis numquam ratione minima voluptates facere quis non! Maxime, consectetur quam animi amet esse a accusamus delectus architecto accusantium magni fugit modi alias repellat. Pariatur, labore aspernatur voluptate adipisci voluptatibus dolores consequuntur tenetur odit illo ducimus.</p>
+                <p>Dolores, animi distinctio recusandae obcaecati odit voluptatibus totam impedit dolor harum molestiae perferendis blanditiis saepe earum reiciendis nostrum temporibus in non laborum numquam iste esse delectus doloremque quod ipsum error? Unde, quae laboriosam in accusamus vitae numquam reiciendis ipsam autem fugiat amet vel reprehenderit adipisci sit. Ratione, doloremque nisi unde?</p>
+                <p>Alias, sit, porro tempore fugiat a eligendi repellendus in eum odit asperiores iste temporibus mollitia ad similique suscipit dolorum sint itaque exercitationem eos et vero veniam ab praesentium rem vitae quibusdam eaque doloribus molestias error quos nostrum ullam doloremque reprehenderit deserunt molestiae aliquid officia corrupti aliquam impedit consectetur? Id, voluptates!</p>
+            </article>
+            <!--section.modale>article>h2{Hello}+(p>lorem500)+button{Fermer}-->
+            <div id="modal">
+                <article>
+                    <h2>Hello</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ratione quis numquam incidunt ad nemo alias officiis ipsa natus perferendis! Facilis, aperiam, dolorem, cumque odio incidunt est deleniti magnam autem tempore id officia ab architecto sunt. Possimus, explicabo, vero, alias cupiditate eligendi accusamus quo minima ipsa sit quibusdam nulla tenetur dolorum. Vitae, pariatur, facilis illum necessitatibus minus minima dicta error quas. In, repudiandae, fugit, magnam, ratione aliquam quod nobis eum odit temporibus ea cum distinctio corporis quis voluptatibus enim sint reiciendis et soluta excepturi eos ab minus architecto possimus. Obcaecati, ab rerum quia harum labore non ex et impedit pariatur!</p>
+                    <button id="close">Fermer</button>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <p><a href="www.3wa.fr"><img src="3wa-logo.png" alt="Propriété de la 3W Academy"></a></p>
+            <p>Ce matériel pédagogique est la propriété de la <a href="www.3wa.fr">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    </body>
+    <script>
+        var modal = document.getElementById("modal");
+        var open = document.getElementById("open");
+        var close = document.getElementById("close");
+        
+        open.onclick = function(){
+            modal.style.display = "block";
+        }
+        
+        close.onclick = function(){
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</html>

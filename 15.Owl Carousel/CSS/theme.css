@@ -1,0 +1,7 @@
+h2, p {
+    text-align:center;
+}
+audio, video {
+    display:block;
+    margin:0 auto;
+}

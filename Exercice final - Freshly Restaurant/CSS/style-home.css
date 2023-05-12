@@ -8,6 +8,7 @@ body {
     margin:0;
     padding:0;
     background-color: #fff;
+    background: linear-gradient(#ebe3db 20px,#fff 60px);
 }
 main {
     padding:1em;
@@ -43,7 +44,6 @@ main h4::before, main h4::after {
 
 /***HEADER***/
 header {
-    background: linear-gradient(#ebe3db 20%,#fff 40%);
     text-align:center;
 } 
 header img {
@@ -71,7 +71,7 @@ header li {
     background-color: #ebe3db;
     border-bottom:1px solid #4c4343;
 }
-header li:first-child {
+header ul .here {
     border-top:1px solid #4c4343;
     background-color: #4c4343;
     color:white;
@@ -98,9 +98,39 @@ header li a:hover {
 }
 
 
+/***SLIDER***/
+.slick-prev {
+    /*background-color:red;*/
+    left:1%;
+    z-index:1;
+    /*transform-origin:center center;*/
+    width:40px;
+    height:40px;
+}
+.slick-prev::before {
+    font-size:40px;
+}
+
+.slick-next {
+    right:1%;
+    z-index: 1;
+    width:40px;
+    height:40px;
+}
+.slick-next::before {
+    font-size:40px;
+}
+.slick-dots li button:before {
+    font-size:12px;
+}
+.slick-dots li.slick-active button:before {
+    color:#950000;
+}
+
 /***WELCOME***/
 .welcome {
     text-align:justify;
+    padding-top: 2em;
 }
 .welcome img {
     width:100%;
@@ -108,21 +138,74 @@ header li a:hover {
 
 
 /***MENUS***/
+.menus {
+    padding-top:2em;
+}
 .menus article {
     background-color: #ebe3db;
     padding:1em 0;
     margin:1em 0;
 }
-.menus article img {
+.menus article figure {
     width:100%;
+    margin:0;
+    position:relative;
+    z-index:1;
 }
-.menus article p {
+.menus article figure img {
+    /*objet-fit:cover;*/
+    width:100%;
+    /*height: 100%;*/
+    /*position:static;*/
+    z-index:2;
+}
+.menus svg {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index:3;
+    padding:2em;
+    opacity:0;
+    transition:all .4s;
+}
+.menus svg:hover {
+    background-color: rgba(76,67,67,.9);
+    opacity:1;
+}
+/*.prices {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    color:white;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.prices p:first-child {
+    font-size:5rem;
+}
+.prices p {
+    margin:1rem;
+}*/
+.menus article > p {
     font-size:1.5rem;
-    padding:1em;
+    padding:.5em;
     margin:0;
     border-bottom:1px dashed #4c4343;
 }
-.menus article p:before {
+.menus article > p:before {
     content:"★";
     color:#950000;
     font-size:1.5rem;
@@ -134,10 +217,22 @@ header li a:hover {
     border:none;
     background-color: #4c4343;
     color:white;
+    font-weight:bold;
     width:90%;
-    padding:1em;
+    padding:.5em;
     display:block;
     margin:1em auto;
+    transition:all .3s;
+}
+.menus .more::before {
+    content:url(../ressources/images/fork-knife.svg);
+    display:inline-block;
+    width: 2.5rem;
+    vertical-align:middle;
+    padding-right:.5em;
+}
+.menus .more:hover {
+    background-color: #950000;
 }
 
 
@@ -146,4 +241,103 @@ footer {
     background-image: url(../ressources/images/footer-bg.jpg);
     color:white;
     text-align:center;
+    font-size:1.6rem;
+    padding:1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer h3 {
+    font-size:1.8rem;
+    display:inline-block;
+    padding:0.5em;
+    width:100%;
+    border-bottom:1px dashed white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer p {
+    margin:0;
+}
+footer a {
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    margin:1em;
+}
+.fa-brands {
+    font-size:3rem;
+    padding:.4em;
+}
+
+
+/*----TABLETTE----*/
+@media screen and (min-width:780px) and (max-width:980px) {
+    /***HEADER***/
+    header nav {
+        background-color: #ebe3db;
+    }
+    header ul {
+        display:flex;
+        justify-content:space-evenly;
+        width:100%;
+    }
+    header li {
+        border:none;
+        width:5em;
+    }
+    .here {
+        border:none;
+    }
+    /***FOOTER***/
+    footer {
+        /*columns:3;*/
+        display:flex;
+        justify-content:space-evenly;
+    }
+    footer section {
+        width:100%;
+        padding:1em;
+    }
+}
+
+
+/*----DESKTOP----*/
+@media screen and (min-width:980px) {
+    /***GENERAL***/
+    .container {
+        max-width:1400px;
+        width:90%;
+        margin:0 auto;
+    }
+    /***HEADER***/
+    header {
+        display:flex;
+        justify-content:flex-between;
+        align-items:center;
+        width:30em;
+    }
+    header .name {
+        display:flex;
+        /*padding:0 2em;*/
+        align-items:center;
+    }
+    header img {
+        display:block;
+        margin:2em 0;
+    }
+    header ul {
+        display:flex;
+        justify-content:space-evenly;
+        width:100%;
+    }
+    header li {
+        border:none;
+        width:5em;
+        margin-left:1em;
+    }
+    header .here {
+        border:none;
+    }
 }

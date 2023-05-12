@@ -3,29 +3,29 @@
 //   hiddenBox.show();
 // });
 
+$(document).ready(function(){
+  $(".text").css("color","green");
+})
+
 //CSS
 $(document).ready(function(){
   $(".css").click(function(){
-    $(".text").toggleClass("blue");
-   //$(".hello").toggleClass("blue");
+    $(".text").css("color","blue");
+    // $(".text").toggleClass("blue");
   });
 });
 
+
 //HTML
-// $(document).ready(function(){
-//   $(".html").click(function(){
-//     $(".hello").toggle();
-//     $(".lorem").toggle();
-//   });
-// });
 $(document).ready(function(){
     $(".html").click(function(){
-        //$("p.p1").html("Hello World !");
-        $("p.p1").toggle();
-        $("p.p2").toggle();
-        $(".hello").toggle();
+        $("p.p1").html("Hello World !");
+        // $("p.p1").toggle();
+        $("p.p2").hide();
+        // $(".hello").toggle();
     })
 })
+
 
 //Toggle
 $(document).ready(function(){
@@ -33,6 +33,7 @@ $(document).ready(function(){
     $(".text").toggle();
   });
 });
+
 
 //Slide
 $(document).ready(function(){

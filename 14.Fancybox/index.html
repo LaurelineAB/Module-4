@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fancy Box</title>
+        <link rel="stylesheet" href="CSS/common-v3.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/theme.css">
+        <link rel="stylesheet" href="ressources/fancybox/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="ressources/fancybox/jquery.fancybox.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Plugin jQuery</h1>
+            <p>Galerie d'images avec le plugin jQuery Fancy Box</p>
+        </header>
+        <main>
+            <article>
+                <h2>Fancy Box</h2>
+                <div id="gallery">
+                    <a href="ressources/images/abstract1-grand.jpg" data-fancybox="gallery" data-caption="Abstract #1"><img src="ressources/images/abstract1-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/abstract2-grand.jpg" data-fancybox="gallery" data-caption="Abstract #2"><img src="ressources/images/abstract2-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/nature1-grand.jpg" data-fancybox="gallery" data-caption="Nature #1"><img src="ressources/images/nature1-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/nature2-grand.jpg" data-fancybox="gallery" data-caption="Nature #2"><img src="ressources/images/nature2-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/nature3-grand.jpg" data-fancybox="gallery" data-caption="Nature #3"><img src="ressources/images/nature3-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/tech1-grand.jpg" data-fancybox="gallery" data-caption="Tech #1"><img src="ressources/images/tech1-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/tech2-grand.jpg" data-fancybox="gallery" data-caption="Tech #2"><img src="ressources/images/tech2-vignette.jpg" alt=""></a>
+                    <a href="ressources/images/tech3-grand.jpg" data-fancybox="gallery" data-caption="Tech #3"><img src="ressources/images/tech3-vignette.jpg" alt=""></a>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p><a href="www.3wa.fr"><img src="3wa-logo.png" alt="Propriété de la 3W Academy"></a></p>
+            <p>Ce matériel pédagogique est la propriété de la <a href="www.3wa.fr">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="ressources/fancybox/jquery.fancybox.min.js"></script>
+    <script src="ressources/fancybox/jquery.fancybox.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            
+        });
+        // $(document).ready(function(){
+            // Fancybox.bind(document.getElementById("gallery"), "[data-fancybox]", {
+            // Your custom options
+            // });
+        // })
+    </script>
+    </body>
+</html>
