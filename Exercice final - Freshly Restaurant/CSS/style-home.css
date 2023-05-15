@@ -153,11 +153,11 @@ header li a:hover {
     z-index:1;
 }
 .menus article figure img {
-    /*objet-fit:cover;*/
+    object-fit:cover;
     width:100%;
-    /*height: 100%;*/
+    height:100%;
     /*position:static;*/
-    z-index:2;
+    /*z-index:2;*/
 }
 .menus svg {
     -webkit-box-sizing: border-box;
@@ -259,6 +259,7 @@ footer h3 {
 }
 footer p {
     margin:0;
+    text-align:center;
 }
 footer a {
     text-decoration:none;
@@ -291,14 +292,20 @@ footer a {
         border:none;
     }
     /***FOOTER***/
-    footer {
+    footer .container {
         /*columns:3;*/
         display:flex;
         justify-content:space-evenly;
     }
-    footer section {
+    footer .container section {
         width:100%;
         padding:1em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    footer section p {
+        text-align:center;
     }
 }
 
@@ -339,5 +346,50 @@ footer a {
     }
     header .here {
         border:none;
+    }
+    
+    /***WELCOME***/
+    .welcome img {
+        float:right;
+        width:40%;
+        padding-left:1em;
+    }
+    .welcome::after {
+        clear:both;
+        content:"";
+        display:block;
+    }
+    
+    /***MENUS***/
+    .menus {
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:1em;
+        /*grid-template-areas:
+        "title title title"
+        "meat fish veggie";*/
+    }
+    .menus h3 {
+        grid-column:1/4;
+    }
+    
+    /***FOOTER***/
+    footer {
+        padding:0;
+    }
+    footer .container {
+        /*columns:3;*/
+        display:flex;
+        justify-content:space-evenly;
+    }
+    footer .container section {
+        width:calc(100% / 3);
+        padding:1em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    footer section p {
+        text-align:center;
     }
 }

@@ -1,0 +1,47 @@
+p {
+    text-align:justify;
+}
+
+/***ABOUT US***/
+.about-us video {
+    /*padding:1em;*/
+    display:block;
+    margin:0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/***PRIVATE DINING***/
+.gallery {
+    background-color: #ebe3db;
+    padding:1em;
+}
+.gallery figure {
+    margin:0 0 1em 0;
+    /*width:100%;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.gallery img {
+    width: 100%;
+    box-shadow:3px 3px 5px #999;
+}
+.gallery figcaption {
+    text-align:center;
+    margin-top:0;
+}
+.gallery figure:last-of-type {
+    margin-bottom:0;
+}
+
+
+/*----TABLETTE ET DESKTOP----*/
+@media screen and (min-width:780px) {
+    .gallery {
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:1em;
+    }
+}

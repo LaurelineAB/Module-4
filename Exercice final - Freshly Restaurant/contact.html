@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Freshly Restaurant</title>
+    <script src="https://kit.fontawesome.com/cfbfa770a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@400;700&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style-home.css"/>
+    <link rel="stylesheet" href="CSS/style-contact.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="slick/slick.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+    
+    <!--<script type="text/javascript" src="../ressources/jquery-3.5.1.js"></script>-->
+    <!--<script type="text/javascript" src="../ressources/jquery-3.5.1.min.js"></script>-->
+</head>
+<body>
+    <header class="container">
+        <div class="name">
+            <img src="ressources/images/logo.png" alt="Freshly Food And Drink">
+            <h1>Freshly Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menus.html">Menus</a></li>
+                <li class="here"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <!--h2{Contact us}+p*2+(form>((fieldset.reservation>h3{Reservation}+(label+input)*3)+(fieldset.details>h3{Details}+(label+input)*3)+(fieldset.request>h3{Further request}+textarea)+button.submit))+h3{Our location}-->
+        <h2>Contact us</h2>
+        <p>If you want to make a reservation, please complete this form.</p>
+        <p>Fields with <span>*</span> are required.</p>
+        <form action="" method="_GET">
+            <fieldset class="reservation">
+                <h3>Reservation</h3>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" required>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" required>
+                <label for="guests">Number of guests</label>
+                <input type="number" name="guests" id="guests" required>
+            </fieldset>
+            <fieldset class="details">
+                <h3>Details</h3>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="tel">Telephone</label>
+                <input type="tel" name="tel" id="tel" required>
+            </fieldset>
+            <fieldset class="request">
+                <h3>Further request</h3>
+                <textarea name="request"></textarea>
+            </fieldset>
+            <button class="submit" type="submit">Reserve</button>
+        </form>
+        <h3>Our location</h3>
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00259733200075%2C40.733167396549284%2C-73.99905681610109%2C40.73496000380593&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+    </main>
+    <footer>
+        <section class="container">
+            <section class="hours">
+                <h3>Opening hours</h3>
+                <p>Monday : Closed</p>
+                <p>Tue-Wed : 9am - 10pm</p>
+                <p>Thu-Fri : 9am - 10pm</p>
+                <p>Sat-Sun : 5pm - 10pm</p>
+            </section>
+            <section class="contact">
+                <h3>Contact</h3>
+                <adress>
+                    <p>13 Christopher Street</p>
+                    <p>New York,</p>
+                    <p>NY 10014-3543</p>
+                    <p><a href="tel:+0120008009999">+01 2000 800 9999</a></p>
+                </adress>
+            </section>
+            <section class="socials">
+                <h3>Social networks</h3>
+                <p>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </p>
+            </section>
+        </section>
+    </footer>
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!--<script type="text/javascript" src="slick/slick.min.js"></script>-->
+<!--Liens CDNJS-->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(document).ready(function(){
+        $('.single-item').slick({
+            arrows:true,
+            dots:true,
+            dotsClass:"slick-dots",
+        });
+    })
+        
+    </script>
+
+    </body>
+</html>
+<!--(header>img+h1+(nav>ul>(li>a)*4))
++(main>iframe.slider+(section.welcome>h3+img+(p>lorem100)*2)
++(section.menus>(h3{Special menus}+(article>h4+img+(p>lorem4)*5+button.more)*3)))
++(footer>(section.hours>h3{Opening hours}+p*4)+(section.contact>h3{Contact}+adress>p*4)+(section.socials>h3{Social networks}+p))-->

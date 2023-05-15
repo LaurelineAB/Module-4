@@ -1,0 +1,94 @@
+/***GENERAL***/
+main p {
+    text-align:center;
+}
+
+
+/***CARTES***/
+section[class*="photos"] {
+    background-color: #ebe3db;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:2em .5em;
+    padding:1em .5em;
+}
+section[class*="photos"] article {
+    width:calc(100% / 2 - .5em);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow:3px 3px 5px #999;
+    display:block;
+    position:relative;
+    transition:all .3s;
+}
+section[class*="photos"] img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+section[class*="photos"] div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(76,67,67,.9);
+    outline:2px solid white;
+    outline-offset:-1em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:all .3s;
+    opacity:0;
+}
+section[class*="photos"] div p {
+    color:white;
+    text-align:center;
+    font-family:Merienda;
+}
+section[class*="photos"] div p::before {
+    content:url(../ressources/images/fork-knife.svg);
+    display:block;
+    width:20%;
+    margin:0 auto;
+}
+section[class*="photos"] article:hover {
+    opacity:1;
+    transform:scale(1.1);
+    z-index:1;
+}
+section[class*="photos"] article:hover div {
+    /*transform:scale(1.1);*/
+    opacity:1;
+}
+
+/***FILTRE***/
+.controls {
+    display:flex;
+    justify-content:center;
+    gap:1em;
+    padding:1em;
+}
+.filter {
+    font-size:1.6rem;
+    text-transform:uppercase;
+    font-weight:bold;
+    background-color: #ebe3db;
+    border:none;
+    padding:.5em 1em;
+}
+.mixitup-control-active {
+    background-color: #950000;
+    border:none;
+    color:white;
+}
+
+
+/*----TABLETTE ET DESKTOP----*/
+@media screen and (min-width:780px) {
+    section[class*="photos"] article {
+        width:calc(100% / 3 - .5em);
+    }
+}
